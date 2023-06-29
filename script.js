@@ -11,6 +11,7 @@ function isElementInViewport(element) {
 
 // Function to handle the slide-in effect
 function handleSlideIn() {
+  console.log('handleSlideIn called');
   var slideInElements = document.querySelectorAll('.slide-in');
   slideInElements.forEach(function (element) {
     if (isElementInViewport(element)) {
