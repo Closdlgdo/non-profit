@@ -3,6 +3,7 @@
 <head>
   <title>Eden Homes - Merchandise</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xI2IoXIKClulNd7e1oJ6SRrUp75sRRrOvMRn3+TVF0Z32leuNKntu8ChDmamTChO8z2h+J68MIWu1Jw47ElXQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -14,7 +15,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="active"><a href="merchandise.html">Merchandise</a></li> <!-- Active menu item for current page -->
+        <li class="active"><a href="merchandise.html">Merchandise</a></li> 
+        <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li><!-- Active menu item for current page -->
       </ul>
     </nav>
   </header>
@@ -27,6 +29,12 @@
         <h3>Product 1</h3>
         <p>Description of Product 1.</p>
         <p>$19.99</p>
+        <select>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
         <button>Add to Cart</button>
       </div>
       
@@ -38,7 +46,5 @@
   <footer>
     <p>&copy; 2023 Eden Homes. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
