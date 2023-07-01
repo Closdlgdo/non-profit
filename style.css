@@ -1,20 +1,12 @@
-/* styles.css */
-
 /* General Styling */
 body {
   font-family: 'Arial', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
-}
-
-/* Header Styling */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  background-color: #e7e3ed; /* background color */
+  color: #000000; /* Text color */
 }
 
 .logo img {
@@ -32,7 +24,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 /* Main Content Styling */
@@ -40,42 +32,141 @@ main {
   padding: 20px;
 }
 
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Set the container to full viewport height */
+  overflow: auto; /* Enable scrolling within the container */
+  border: 1px solid red;
+}
+
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
-.big-box {
-  width: 100%;
-  max-width: 500px;
-  background-color: #f9f9f9;
+  justify-content: center;
+  height: 100vh; /* Each section takes up the full viewport height */
   padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.card {
+  display: flex; /* Add flex display */
+  flex-direction: row; /* Arrange the image and content horizontally */
+  align-items: center; /* Center the items vertically */
+  width: 90%;
+  max-width: 1800px;
+  background-color: #f9f9f9;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid red; /* Add red frame */
 }
 
-.big-box img {
-  max-width: 100%;
+.card:first-child .image-container {
+  position: relative;
+}
+
+.card:first-child .image-container img {
+  width: 100%;
   height: auto;
+  border-radius: 8px;
+  border: 1px solid red;
 }
 
-.big-box h2 {
-  font-size: 24px;
-  margin-top: 20px;
+.card:first-child .image-container .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:first-child .image-container .image-text .logo {
+  margin-right: 10px;
+}
+
+.card1 img {
+  flex: 1; /* Take up available space */
+  max-width: 55%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card2 img {
+  flex: 1; /* Take up available space */
+  max-width: 35%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card3 img {
+  flex: 1; /* Take up available space */
+  max-width: 30%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card4 img {
+  flex: 1; /* Take up available space */
+  max-width: 45%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card5 img {
+  flex: 1; /* Take up available space */
+  max-width: 30%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card6 img {
+  flex: 1; /* Take up available space */
+  max-width: 40%;
+  height: auto;
+  margin-right: 30px; /* Add spacing between image and content */
+  border-radius: 8px; /* Optionally add border-radius to the image */
+  border: 1px solid red;
+}
+
+.card-content {
+  flex: 1; /* Take up available space */
+  text-align: left; /* Adjust text alignment */
+  border: 1px solid red;
+}
+
+.card-content h2 {
+  font-size: 28px;
+  margin-top: 0; /* Remove top margin */
   margin-bottom: 10px;
+  border: 1px solid red;
 }
 
-.big-box p {
-  font-size: 16px;
+.card-content p {
+  font-size: 20px;
   color: #666;
+  border: 1px solid red;
 }
 
 /* Footer Styling */
@@ -83,45 +174,12 @@ footer {
   padding: 20px;
   color: #000000;
   text-align: center;
+  border: 1px solid red; /* Add red frame */
 }
 
 footer p {
   font-size: 16px;
 }
-
-/* Additional styles for the merchandise page */
-main section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.product select {
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 16px;
-}
-
-.product button {
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 16px;
-}
-
-.cart-icon {
-  margin-left: 20px; /* Adjust the margin as needed for spacing */
-}
-
-.cart-icon i {
-  font-size: 20px; /* Adjust the font size as needed */
-  color: #333; /* Customize the color */
-}
-
 
 /* Responsive Styles for Phone */
 @media (max-width: 768px) {
@@ -144,12 +202,7 @@ main section {
     padding: 10px;
   }
 
-  section {
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .big-box {
+  .card {
     width: 100%;
   }
 
